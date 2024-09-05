@@ -74,7 +74,7 @@ resource "aws_instance" "apache2_server" {
   }
 
   depends_on = [
-    module.generic_sg_egress, aws_key_pair.gitops
+    module.generic_sg_egress
   ]
 }
 
